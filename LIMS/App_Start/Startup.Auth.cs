@@ -9,6 +9,7 @@ using LIMS.Models;
 
 namespace LIMS
 {
+    //测试
     public partial class Startup
     {
         // 有关配置身份验证的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkId=301864
