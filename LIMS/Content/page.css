@@ -1,0 +1,13 @@
+﻿
+body {
+    font-family: verdana,helvetica,arial,sans-serif;
+    font-size: 12px;
+}
+
+.easyui-datebox, .easyui-combobox, .easyui-textbox {
+    width: 160px;
+}
+
+.query-condition {
+    padding: 5px;
+}
