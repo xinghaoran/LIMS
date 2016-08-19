@@ -19,60 +19,7 @@
                 <div id="LoginTopLine">胜华泰LIMS——实验室管理系统</div>
                 @*<div id="LoginBotoomLine">追求卓越品质</div>*@
             </div>
-            <div class="define-account" style="cursor: pointer;">
-                @*@Html.Partial("_LoginPartial")*@
-                <a><span>MrZhangSan</span></a>
-                &nbsp;&nbsp;&nbsp;
-                <a style="text-decoration:underline"><b>切换用户</b></a>
-                &nbsp;&nbsp;&nbsp;
-                <a style="text-decoration:underline"><b>注销</b></a>
-                &nbsp;&nbsp;&nbsp;
-            </div>
-        </div>
-    </div>
-    <div data-options="region:'west',split:true,title:'菜单'" style="width:250px;">
-        <div class="easyui-accordion" data-options="fit:'true'">
-            <div title="样品管理" data-options="iconCls:'icon-remove'" style="padding:10px;">
-            </div>
-            <div title="计量器具管理" data-options="iconCls:'icon-save'" style="overflow:auto;padding:10px;">
-            </div>
-            <div title="标准物管理" data-options="iconCls:'icon-tip'" style="padding:10px;">
-                <p>The accordion allows you to provide multiple panels and display one or more at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.</p>
-            </div>
-            <div title="质量管理" data-options="iconCls:'icon-search'" style="padding:10px;">
-                <p>The accordion allows you to provide multiple panels and display one or more at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.</p>
-            </div>
-            <div title="检验依据管理" data-options="iconCls:'icon-ok'" style="padding:10px;">
-                <p>The accordion allows you to provide multiple panels and display one or more at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.</p>
-            </div>
-            <div title="商务管理" data-options="iconCls:'icon-man'" style="padding:10px;">
-                <p>The accordion allows you to provide multiple panels and display one or more at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.</p>
-            </div>
-            <div title="文件管理" data-options="iconCls:'icon-reload'" style="padding:10px;">
-                <p>The accordion allows you to provide multiple panels and display one or more at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.</p>
-            </div>
-            <div title="增项管理" data-options="iconCls:'icon-more'" style="padding:10px;">
-                <p>The accordion allows you to provide multiple panels and display one or more at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.</p>
-            </div>
-            <div title="待处理任务" data-options="iconCls:'icon-help'" style="padding:10px;">
-                <p>The accordion allows you to provide multiple panels and display one or more at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.</p>
-            </div>
-        </div>
-    </div>
-    <div data-options="region:'east',split:true,collapsed:false,title:'管理'" style="width:250px;">
-        <div class="easyui-accordion" data-options="fit:'true'">
-            <div title="检测项目管理" data-options="iconCls:'icon-filter'" style="overflow:auto;padding:10px;">
-                <ul class="easyui-tree" data-options="url:'tree_data_project.json',method:'get',animate:true"></ul>
-            </div>
-            <div title="设备管理" data-options="iconCls:'icon-filter'" style="padding:10px;">
-                <ul class="easyui-tree" data-options="url:'tree_data_shebei.json',method:'get',animate:true"></ul>
-            </div>
-            <div title="合同管理" data-options="iconCls:'icon-filter'" style="padding:10px;">
-                <ul class="easyui-tree" data-options="url:'tree_data_hetong.json',method:'get',animate:true"></ul>
-            </div>
-            <div title="实验模板管理" data-options="iconCls:'icon-filter'" style="padding:10px;">
-                <ul class="easyui-tree" data-options="url:'tree_data_muban.json',method:'get',animate:true"></ul>
-            </div>
+            @Html.Partial("_LoginPartial")
         </div>
     </div>
     <div data-options="region:'south',border:false" style="height:30px;background:#FFFFFF;padding:10px;">
@@ -83,42 +30,6 @@
             <span id="time" style="position: absolute;right: 2%;"></span>
         </div>
     </div>
-    <div data-options="region:'center'">
-        <div id="tt" class="easyui-tabs" data-options="tools:'#tab-tools'" fit="true" style="width:700px;height:250px">
-            <div title="欢迎使用" style="padding:20px;overflow:hidden; color:red; ">
-                @RenderBody()
-            </div>
-        </div>
-        <div id="tab-tools">
-            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-add'" onclick="addPanel()"></a>
-            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="plain:true,iconCls:'icon-no'" onclick="removePanel()"></a>
-        </div>
-       
-    </div>
-
-    <script type="text/javascript">
-        $(function () {
-            document.getElementById('time').innerHTML = new Date().toLocaleString();
-            setInterval("document.getElementById('time').innerHTML=new Date().toLocaleString();", 1000);
-        })
-    </script>
-    <script type="text/javascript">
-		var index = 0;
-		function addPanel(){
-			index++;
-			$('#tt').tabs('add',{
-				title: 'Tab'+index,
-				content: '<div style="padding:10px">Content' + index + '</div>',
-				closable: true
-			});
-		}
-		function removePanel(){
-			var tab = $('#tt').tabs('getSelected');
-			if (tab){
-				var index = $('#tt').tabs('getTabIndex', tab);
-				$('#tt').tabs('close', index);
-			}
-		}
-    </script>
+    @RenderBody()
 </body>
 </html>
