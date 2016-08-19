@@ -1,0 +1,98 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registerr</title>
+</head>
+<body>
+    <div>
+        <form class="form-horizontal">
+            <fieldset>
+                <div id="legend" class="">
+                    <legend class="">用户注册</legend>
+                </div>
+                <div class="control-group">
+                    <!-- Text input-->
+                    <label class="control-label" for="input01">用户名：</label>
+                    <div class="controls">
+                        <input placeholder="用户名" class="input-xlarge" type="text">
+                        <p class="help-block">请输入用户名</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <!-- Text input-->
+                    <label class="control-label" for="input01">密码：</label>
+                    <div class="controls">
+                        <input placeholder="密码" class="input-xlarge" type="text">
+                        <p class="help-block">请输入密码</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <!-- Text input-->
+                    <label class="control-label" for="input01">手机：</label>
+                    <div class="controls">
+                        <input placeholder="手机号码" class="input-xlarge" type="text">
+                        <p class="help-block">请输入手机号码</p>
+                    </div>
+                </div><div class="control-group">
+                    <!-- Text input-->
+                    <label class="control-label" for="input01">E_Mail：</label>
+                    <div class="controls">
+                        <input placeholder="E_Mail" class="input-xlarge" type="text">
+                        <p class="help-block">请输入email</p>
+                    </div>
+                </div><div class="control-group">
+
+                    <!-- Select Basic -->
+                    <label class="control-label">部门：</label>
+                    <div class="controls">
+                        <select class="input-xlarge">
+                            <option>开发部</option>
+                            <option>质检部</option>
+                            <option>办公室</option>
+                            <option></option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="control-group">
+                    <label class="control-label">性别：</label>
+                    <div class="controls">
+                        <!-- Inline Radios -->
+                        <label class="radio inline">
+                            <input checked="checked" value="男" name="sex" type="radio">
+                            男
+                        </label>
+                        <label class="radio inline">
+                            <input value="女" name="sex" type="radio">
+                            女
+                        </label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">简历：</label>
+
+                    <!-- File Upload -->
+                    <div class="controls">
+                        <input class="input-file" id="fileInput" type="file">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label"></label>
+
+                    <!-- Button -->
+                    <div class="controls">
+                        <button class="btn btn-info">提交</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
