@@ -925,6 +925,7 @@
     <Content Include="fonts\Font-Awesome-3.2.1\src\_plugins\icon_page_generator.rb" />
     <Content Include="fonts\Font-Awesome-3.2.1\src\_plugins\site.rb" />
     <Content Include="fonts\Font-Awesome-3.2.1\_config.yml" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
