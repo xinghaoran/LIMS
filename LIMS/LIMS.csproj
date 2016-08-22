@@ -974,7 +974,7 @@
     <Content Include="Views\Home\Registerr.cshtml" />
     <Content Include="tree_data_hetong.json" />
     <Content Include="tree_data_muban.json" />
-    <Content Include="tree_data_project.json" />
+    <Content Include="tree_data_project.aspx" />
     <Content Include="tree_data_shebei.json" />
   </ItemGroup>
   <ItemGroup>
