@@ -1,13 +1,14 @@
 ﻿[
   {
     "id": 1,
-    "text": "项目",
+    "text": "项目proj",
     "children": [
       {
         "id": 11,
         "text": "雅克拉项目",
         "iconCls": "icon-search",
         "state": "closed",
+        "url": "http://www.baidu.com",
         "children": [
           {
             "id": 111,

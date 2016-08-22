@@ -128,7 +128,8 @@ a {
     }
 
         .easyui-accordion ul li a {
-            line-height: 24px;
+            line-height: 40px;
+            padding: 25px;
         }
 
         .easyui-accordion ul li div {
