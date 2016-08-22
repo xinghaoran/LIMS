@@ -9,6 +9,7 @@
         "iconCls": "icon-search",
         "state": "closed",
         "url": "http://www.baidu.com",
+        "method": "GET",
         "children": [
           {
             "id": 111,

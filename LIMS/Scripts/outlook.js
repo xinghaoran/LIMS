@@ -146,6 +146,8 @@ function addTab(subtitle, url, icon) {
         $('#tabs').tabs('select', subtitle);
         $('#mm-tabupdate').click();
     }
+    $('#tabs').tabs('select', subtitle);
+    $('#mm-tabupdate').click();
     tabClose();
 }
 
